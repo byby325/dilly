@@ -3,30 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Grid</title>
 </head>
 <style>
-  .box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  #container {
+    display: grid;
+    background: #ff0a02;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-gap: 10px;
+    padding: 10px;
   }
   .inner-box {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    font-size: 3em;
+    color: #333;
+    background: #ffa5a8;
+    text-align: center;
   }
-  .a {
-    height: 250px;
-  }
-  .c {
-    height: 300px;
-  }
-
 </style>
 <body>
-  <div class="box">
+  <div id="container">
     <div class="inner-box a">1</div>
     <div class="inner-box b">2</div>
     <div class="inner-box c">3</div>
