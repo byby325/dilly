@@ -4,115 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lab07.css">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="lab07.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="mammal.png">
+        <img src="mammal.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        軟體設計與程式應用
+        </a>
+    </nav>
+    
+    <!-- 師資 -->
+    <h2 class="teacher">師資</h2>
+      <div class="container">
         <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="teacher1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h3 class="card-title">薛老大</h3>
+                      <h5>Python程式基礎設計</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">師資介紹</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="teacher2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h3 class="card-title">許阿源</h3>
+                      <h5>web程式基礎設計</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">師資介紹</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="teacher3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h3 class="card-title">王小明</h3>
+                      <h5>軟體工程專題</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">師資介紹</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="teacher4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h3 class="card-title">滑起來</h3>
+                      <h5>資訊概論</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">師資介紹</a>
+                    </div>
+                  </div>
+            </div>
         </div>
       </div>
 
-
-      <div class="parent">
-        <header class="pink-section">Header</header>
-        <div class="left-side-blue-section" contenteditable>Left Sidebar</div>
-        <main class="section-coral" contenteditable>
-         <!--0814 lab05-->
-    <table border width="1000px" style="text-align: center" align ="center";>
-        <caption>課表</caption>
+    <!-- 課表 -->
+    <h2 class="lesson">課表</h2>
+      <table class="table table-hover" style="width: 1000px;">
         <thead>
-            <tr style = height = "1fr">  
-                <th class="border-left"></th>
-                <th><b>星期一</th>
-                <th>星期二</th>
-                <th>星期三</th>
-                <th>星期四</th>
-                <th class="border-right">星期五</b></th>
-            </tr>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">星期一</th>
+            <th scope="col">星期二</th>
+            <th scope="col">星期三</th>
+            <th scope="col">星期四</th>
+            <th scope="col">星期五</th>
+          </tr>
         </thead>
         <tbody>
-        <tr height = "1fr" >
-            <td>09:10</td>
+            <tr height = "1fr">
+            <th scope="row">09:10</th>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
             <td>軟體工程專題</td>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-        </tr>
-        <tr height = "1fr">
-            <td>10:10</td>
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">10:10</th>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
             <td>軟體工程專題</td>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-        </tr>
-        <tr height = "1fr">
-            <td>11:10</td>
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">11:10</th>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
             <td>軟體工程專題</td>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-        </tr>
-        <tr height = "1fr">
-            <td>12:10</td>
-            <td colspan="5" style="background-color: #3e6b7e;;font-size: 30px;text-align: center;">
-                    午休</td>
-        </tr>
-        <tr height = "1fr">
-            <td>13:10</td>
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">12:10</th>
+            <td colspan="5" style="text-align: center; font-size: 120%; font-weight:bold;">午休</td>
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">13:10</th>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-            <td style="text-align: center;">資訊概論</td>
+            <td>資訊概論</td>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-        </tr>
-        <tr height = "1fr">
-            <td>14:10</td>
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">14:10</th>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-            <td style="text-align: center;">資訊概論</td>
+            <td>資訊概論</td>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-        </tr>
-        <tr height = "1fr">
-            <td>15:10</td>
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">15:10</th>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-            <td style="text-align: center;">資訊概論</td>
+            <td>資訊概論</td>
             <td>python程式基礎設計</td>
             <td>web程式基礎設計</td>
-        </tr>
-        <tr height = "1fr">
-            <td>16:10</td>
-            <td colspan="5" style="background-color: #3e6b7e; font-size: 30px;text-align: center;">晚安</td>
-        </tr>
-    </table>
-        <!--0814 lab05-->
-        </main>
-      </div>
-    <div class="box">
-        <div class="box-pink" ><img src="https://media.giphy.com/media/N9sGZeO5egCd2/giphy.gif" width="100%"></div>
-        <div class="box-purple"><img src="https://media.giphy.com/media/Kq3y54eJnoPja/giphy.gif" width="100%"></div>
-        <div class="box-blue"><img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="100%"></div>
-        <div class="box-green"><img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" width="100%"></div>
-      </div>
-      <footer class="green-section">Footer</footer>
-    </tbody>
-    
+          </tr>
+          <tr height = "1fr">
+            <th scope="row">16:00</th>
+            <td colspan="5" style="text-align: center; font-size: 120%; font-weight:bold;">回家囉 88!</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- 介紹影片 -->
+    <h2 class="lesson">介紹影片</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nKUk6rCH1Us" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
     <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
