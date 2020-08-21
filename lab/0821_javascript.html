@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "hi";
+}
+</script>
+<script>
+  let clock = document.getElementById("clock");
+function updateTime() {
+  console.log("time is being updated");
+  const timeNow = moment();
+  const timeCanBeReading = timeNow.format("hh:mm:ss A");
+  // H: 會是 24hr 制
+  console.log(timeCanBeReading);
+  clock.textContent = timeCanBeReading;
+}
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+<title></title>
+<style type="text/css" media="screen">
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    height: 75%;
+    width: 100vw;
+}
+
+#body {
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#clock {
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 35px;
+  background-color: #333333;
+  border-radius: 20px;
+  border: 5px solid gray;
+  color: greenyellow;
+  width: 600px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+}
+
+</style>
+
+</head>
+<body>
+
+<form name='form' id='form'>
+  姓名：
+  <input type='text' name='name' id='name' /> 
+  E-mail：
+  <input type='text' name='email' id='email' />
+  <input type='button' name='submit' value='送出' onclick='processFormData();' style="cursor: pointer;" />
+</form>
+
+<script>
+  function processFormData() {
+  const nameElement = document.getElementById("name");
+  const name = nameElement.value;
+  const emailElement = document.getElementById("email");
+  const email = emailElement.value;
+  alert("你的姓名是 " + name + "\n電子郵件是 " + email);
+}
+</script>
+
+<div id="clock"></div>
+
+
+
+
+
+
+
+<script>https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js</script>
+<script>https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/zh-tw.min.js</script>
+
+
+</body>
+</html>
